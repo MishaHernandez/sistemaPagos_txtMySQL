@@ -13,7 +13,6 @@ import java.util.ArrayList;
  */
 
 /**
- *
  * @author John
  */
 public class Aplicacion {

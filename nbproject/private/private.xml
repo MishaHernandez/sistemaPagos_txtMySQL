@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version1/Aplicacion.java</file>
-            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version1/Operaciones.java</file>
+            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version4/OperacionesSQL.java</file>
+            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version4/Aplicacion.java</file>
+            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version4/OperacionesFile.java</file>
+            <file>file:/E:/project.java/_netbeansproyect/sistemaPagos2/src/version4/Conector.java</file>
         </group>
     </open-files>
 </project-private>

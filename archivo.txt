@@ -1,2 +1,2 @@
-12012048;mijail hernandez ramirez;1;120
-12012047;jorge ramos zapata;2;150
+12012048;mijail hernandez ramirez;2;130
+12012047;jorge ramos zapata;4;160
