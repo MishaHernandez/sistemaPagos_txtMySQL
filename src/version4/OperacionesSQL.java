@@ -51,7 +51,28 @@ public class OperacionesSQL {
         con.cerrar();
     }
     
-    public void actualizar(){
+    public void actualizar(ArrayList arraytxt){
+        PreparedStatement pst;
         
+        //convertir datos del array
+        int idestud = Integer.parseInt((String) arraytxt.get(0));
+        String nombre = (String) arraytxt.get(1);
+        String apellp = (String) arraytxt.get(2);
+        String apellm = (String) arraytxt.get(3);
+        int idpago = Integer.parseInt((String) arraytxt.get(4));
+        int monto = Integer.parseInt((String) arraytxt.get(5));
+        
+        String sql="update reporte set nombre = '"+nombre+"', apellidop = '"+apellp+"', apellidom = '"+apellm+"', idpago = "+idpago+", monto = "+monto+" where idestud = "+idestud+"";
+        
+        con.conectar();
+        
+        try {
+            pst = con.conexion.prepareStatement(sql);
+            pst.executeUpdate(); //ejecutar consulta
+            
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        con.cerrar();
     }
 }

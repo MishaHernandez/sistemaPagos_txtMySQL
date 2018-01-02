@@ -103,6 +103,7 @@ public class OperacionesFile {
     public void editar(JTextArea area1) throws IOException {
         FileReader fr = null;
         BufferedReader br;
+        
         String linea, texto="";
         
         try {
@@ -148,7 +149,8 @@ public class OperacionesFile {
     public void guardar(JTextArea area1) throws IOException {
         FileWriter fw;
         BufferedWriter bw;
-        String [] texto;
+        String [] texto, texto2;
+        ArrayList<String> arraytxt = new ArrayList<>();
         int i;
         
         try {
@@ -161,7 +163,24 @@ public class OperacionesFile {
                 //escribiendo texto capturado -> .txt
                 bw.write(String.valueOf(texto [i]));
                 bw.newLine(); //salto de linea
-                opsql.actualizar(); //llamar sentencia sql
+                //separando texto capturado en palabras-> SQL
+                texto2 = texto[i].split("[\\ \\;]");
+                //extrayendo palabras -> SQL
+                String dato1 = texto2[0];
+                String dato2 = texto2[1];
+                String dato3 = texto2[2];
+                String dato4 = texto2[3];
+                String dato5 = texto2[4];
+                String dato6 = texto2[5];
+                //añadir palabras al arraylist -> SQL
+                arraytxt.add(0,dato1);
+                arraytxt.add(1,dato2);
+                arraytxt.add(2,dato3);
+                arraytxt.add(3,dato4);
+                arraytxt.add(4,dato5);
+                arraytxt.add(5,dato6);
+                
+                opsql.actualizar(arraytxt); //llamar sentencia sql
             }
             System.out.println("* Guardando cambios"); //mensaje test!!
             System.out.println("* Actualizando base de datos"); //mensaje test!!
