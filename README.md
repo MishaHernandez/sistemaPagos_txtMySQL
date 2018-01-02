@@ -1,8 +1,8 @@
 # sistemaPagos_txtMySQL
-=======================
 
-# FALTA PROGRAMAR:
 =================================================================================
+# FALTA PROGRAMAR:
+
 # version1: Ejecución automatica de funciones y salida de resultados en consola.
 *Menú de funciones.
 *Funcion de edicion de txt por consola.
@@ -22,8 +22,8 @@
 
 # version4: Aplicación gráfica, menú con botones, clases de operaciones File y SQL
 *Enviar ruta del directorio desde abrir() a los botones leer(), editar(), guardar().
-*Enviar contenido de JTextArea a txt en guardar() y Actualizar BD en actualizar().
 
+=================================================================================
 # BD por ahora trabaja con tabla 'reporte'.
 
 # Herramientas utilizadas:
